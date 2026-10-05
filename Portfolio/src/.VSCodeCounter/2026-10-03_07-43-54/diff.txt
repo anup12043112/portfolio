@@ -1,0 +1,39 @@
+Date : 2026-10-03 07:43:54
+Directory : d:\My Portfolio\Portfolio\src\styles
+Total : 10 files,  2190 codes, 1 comments, 538 blanks, all 2729 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| PostCSS        |          8 |      2,244 |          2 |        547 |      2,793 |
+| JavaScript JSX |          2 |        -54 |         -1 |         -9 |        -64 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                          |         10 |      2,190 |          1 |        538 |      2,729 |
+| . (Files)                                                  |          7 |      1,974 |          2 |        485 |      2,461 |
+| ..                                                         |          2 |        -54 |         -1 |         -9 |        -64 |
+| ..\components                                              |          2 |        -54 |         -1 |         -9 |        -64 |
+| components                                                 |          1 |        270 |          0 |         62 |        332 |
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                   | language       | code       | comment    | blank      | total      |
++------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| d:\My Portfolio\Portfolio\src\components\AppLayout.jsx     | JavaScript JSX |        -11 |          0 |         -2 |        -13 |
+| d:\My Portfolio\Portfolio\src\components\Navbar.jsx        | JavaScript JSX |        -43 |         -1 |         -7 |        -51 |
+| d:\My Portfolio\Portfolio\src\styles\about.css             | PostCSS        |        493 |          2 |        126 |        621 |
+| d:\My Portfolio\Portfolio\src\styles\applayout.css         | PostCSS        |         13 |          0 |          3 |         16 |
+| d:\My Portfolio\Portfolio\src\styles\components\navbar.css | PostCSS        |        270 |          0 |         62 |        332 |
+| d:\My Portfolio\Portfolio\src\styles\contacts.css          | PostCSS        |        243 |          0 |         61 |        304 |
+| d:\My Portfolio\Portfolio\src\styles\home.css              | PostCSS        |        306 |          0 |         77 |        383 |
+| d:\My Portfolio\Portfolio\src\styles\projects.css          | PostCSS        |        268 |          0 |         68 |        336 |
+| d:\My Portfolio\Portfolio\src\styles\resume.css            | PostCSS        |        394 |          0 |         86 |        480 |
+| d:\My Portfolio\Portfolio\src\styles\skills.css            | PostCSS        |        257 |          0 |         64 |        321 |
+| Total                                                      |                |      2,190 |          1 |        538 |      2,729 |
++------------------------------------------------------------+----------------+------------+------------+------------+------------+

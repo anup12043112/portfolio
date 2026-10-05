@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.projects_main * {
+    display: flex;
+}
+
+.projects_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.projects_main .pageIntro {
+    justify-content: center;
+    align-items: start;
+    width: 90%;
+    padding: 1.5rem 0;
+    flex-direction: column;
+}
+
+.projectsPage_header {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 550;
+    color: rgb(52, 52, 52);
+}
+
+.projectsPage_header span {
+    display: inline;
+    color: rgb(0, 76, 255);
+}
+
+.projectsPage_desc {
+    width: 65%;
+    justify-content: left;
+    display: inline;
+    font-size: 1.1rem;
+    color: rgb(78, 78, 78);
+    padding: .7rem 0;
+}
+
+.projectsPage_desc strong {
+    display: inline;
+}
+
+.projects_category {
+    width: 90%;
+    height: fit-content;
+    padding: .5rem;
+    column-gap: .8rem;
+}
+
+.projects_category .categoryBTN {
+    width: fit-content;
+    height: fit-content;
+    padding: .25rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 0 .1rem rgba(0, 0, 255, 0.6);
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.projects_category .categoryBTN:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.projects_category .categoryBTN:active {
+    transform: scale(0.9);
+}
+
+.projects_category .selected {
+    background-color: rgb(0, 122, 252);
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+
+.projects_main .projectShowcase {
+    width: 90%;
+    margin-top: 2rem;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 2rem;
+
+}
+
+@scope (.projects_main .projectShowcase) {
+    .project {
+        width: 31%;
+        padding: .5rem .6rem;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        border-radius: .7rem;
+        overflow: hidden;
+        box-shadow: 0 0 .2rem rgba(136, 0, 255, 0.408);
+    }
+
+    .projectImageBox {
+        width: 100%;
+    }
+
+    .imgProject {
+        width: 100%;
+        border-radius: .3rem;
+    }
+
+    .aboutProject {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .projectTitle {
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: 550;
+        margin: .4rem 0;
+        text-transform: uppercase;
+        color: rgb(0, 0, 162);
+    }
+
+    .projectDesc {
+        width: 95%;
+        font-size: 0.95rem;
+    }
+
+    .techs {
+        width: 100%;
+        justify-content: left;
+        flex-wrap: wrap;
+        row-gap: .5rem;
+        column-gap: .4rem;
+        margin-top: 0.8rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .techUsed {
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding: .25rem .5rem;
+        border-radius: 1.5rem;
+        background-color: rgba(173, 229, 255, 0.784);
+        font-size: 0.8rem;
+        font-weight: 550;
+    }
+
+    .github {
+        bottom: .5rem;
+        position: absolute;
+        column-gap: .7rem;
+        align-items: center;
+    }
+
+    .ghIcon {
+        width: 1.7rem;
+    }
+
+    .label1 {
+        font-size: .95rem;
+        text-decoration: none;
+        color: rgb(0, 0, 176);
+        transition: all 0.3s ease;
+    }
+
+    .label1:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .label0 {
+        font-size: 0.95rem;
+        text-decoration: none;
+        color: rgb(0, 0, 176);
+    }
+
+
+    .scriptContainer {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        row-gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .script {
+        width: 48%;
+        padding: 0.7rem .6rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: .7rem;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 .2rem rgba(136, 0, 255, 0.408);
+    }
+
+    .scriptImageBox {
+        width: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgScript {
+        width: 80%;
+    }
+
+    .aboutScript {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .scriptTitle {
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 550;
+        text-transform: uppercase;
+        color: rgb(0, 0, 162);
+    }
+
+    .scriptDesc {
+        width: 95%;
+        font-size: 1rem;
+        margin: .8rem 0;
+    }
+
+    .techsScript {
+        width: 100%;
+        justify-content: left;
+        column-gap: .4rem;
+        margin-top: 1rem 0;
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 478px) {
+
+    .projects_main .pageIntro {
+        padding: 2.5rem 0;
+    }
+
+    .projectsPage_desc {
+        width: 95%;
+    }
+
+
+    @scope (.projects_main .projectShowcase) {
+        .project {
+            width: 95%;
+            height: 22rem;
+        }
+
+        .projectImageBox {
+            width: 100%;
+            height: 45%;
+        }
+
+        .imgProject {
+            width: 100%;
+            border-radius: .3rem;
+        }
+
+        .aboutProject {
+            width: 100%;
+            height: 45%;
+            flex-direction: column;
+        }
+
+        .github {
+            width: 100%;
+            height: 10%;
+            column-gap: .7rem;
+            align-items: center;
+        }
+
+        .ghIcon {
+            width: 1.4rem;
+        }
+
+        .label1:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .label0 {
+            text-decoration: none;
+            color: rgb(0, 0, 176);
+        }
+
+        .script {
+            width: 95%;
+            height: 10rem;
+        }
+
+        .scriptImageBox {
+            display: none;
+        }
+
+        .aboutScript {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+
+    .projects_main .pageIntro {
+        width: 95%;
+        margin-top: 3rem;
+    }
+
+    .projectsPage_header {
+        font-size: 2rem;
+        font-weight: 550;
+    }
+
+    .projectsPage_desc {
+        width: 75%;
+    }
+
+    .projects_category {
+        width: 95%;
+    }
+
+    .projects_category .categoryBTN {
+        padding: .25rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .projects_main .projectShowcase {
+        width: 95%;
+
+    }
+
+    @scope (.projects_main .projectShowcase) {
+        .project {
+            width: 47%;
+            min-height: 26rem;
+            height: fit-content;
+            justify-content: space-between;
+        }
+
+        .scriptContainer {
+            row-gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .script {
+            width: 75%;
+            padding: 1rem 0;
+        }
+
+        .scriptImageBox {
+            width: 25%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgScript {
+            width: 75%;
+        }
+
+        .aboutScript {
+            width: 75%;
+        }
+
+        .scriptTitle {
+            margin: 0;
+        }
+
+        .scriptDesc {
+            margin: .5rem 0;
+        }
+
+        .techsScript {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1032px) {
+
+    .projects_main .pageIntro {
+        width: 95%;
+        margin-top: 3rem;
+    }
+
+    .projectsPage_header {
+        font-size: 2rem;
+        font-weight: 550;
+    }
+
+    .projectsPage_desc {
+        width: 75%;
+    }
+
+    .projects_category {
+        width: 95%;
+    }
+
+    .projects_category .categoryBTN {
+        padding: .25rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .projects_main .projectShowcase {
+        width: 95%;
+
+    }
+
+    @scope (.projects_main .projectShowcase) {
+        .project {
+            width: 47%;
+            min-height: 26rem;
+            height: fit-content;
+            justify-content: space-between;
+        }
+
+        .scriptContainer {
+            row-gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .script {
+            width: 75%;
+            padding: 1rem 0;
+        }
+
+        .scriptImageBox {
+            width: 25%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgScript {
+            width: 75%;
+        }
+
+        .aboutScript {
+            width: 75%;
+        }
+
+        .scriptTitle {
+            margin: 0;
+        }
+
+        .scriptDesc {
+            margin: .5rem 0;
+        }
+
+        .techsScript {
+            margin-bottom: 3rem;
+        }
+    }
+}

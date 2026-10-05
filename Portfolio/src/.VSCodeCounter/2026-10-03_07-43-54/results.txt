@@ -1,0 +1,34 @@
+Date : 2026-10-03 07:43:54
+Directory : d:\My Portfolio\Portfolio\src\styles
+Total : 8 files,  2244 codes, 2 comments, 547 blanks, all 2793 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| PostCSS  |          8 |      2,244 |          2 |        547 |      2,793 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                       | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                          |          8 |      2,244 |          2 |        547 |      2,793 |
+| . (Files)                                                  |          7 |      1,974 |          2 |        485 |      2,461 |
+| components                                                 |          1 |        270 |          0 |         62 |        332 |
++------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                   | language | code       | comment    | blank      | total      |
++------------------------------------------------------------+----------+------------+------------+------------+------------+
+| d:\My Portfolio\Portfolio\src\styles\about.css             | PostCSS  |        493 |          2 |        126 |        621 |
+| d:\My Portfolio\Portfolio\src\styles\applayout.css         | PostCSS  |         13 |          0 |          3 |         16 |
+| d:\My Portfolio\Portfolio\src\styles\components\navbar.css | PostCSS  |        270 |          0 |         62 |        332 |
+| d:\My Portfolio\Portfolio\src\styles\contacts.css          | PostCSS  |        243 |          0 |         61 |        304 |
+| d:\My Portfolio\Portfolio\src\styles\home.css              | PostCSS  |        306 |          0 |         77 |        383 |
+| d:\My Portfolio\Portfolio\src\styles\projects.css          | PostCSS  |        268 |          0 |         68 |        336 |
+| d:\My Portfolio\Portfolio\src\styles\resume.css            | PostCSS  |        394 |          0 |         86 |        480 |
+| d:\My Portfolio\Portfolio\src\styles\skills.css            | PostCSS  |        257 |          0 |         64 |        321 |
+| Total                                                      |          |      2,244 |          2 |        547 |      2,793 |
++------------------------------------------------------------+----------+------------+------------+------------+------------+

@@ -1,0 +1,743 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ANIMATION CLASSES  */
+.fromLeft_animation {
+    opacity: 0;
+    transform: translateX(-2rem);
+    animation: fromLeft 0.2s linear forwards;
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fromRight_animation {
+    opacity: 0;
+    transform: translateX(2rem);
+    animation: fromRight 0.2s linear forwards;
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fromUp_animation {
+    opacity: 0;
+    transform: translateY(-2rem);
+    animation: fromUp 0.2s linear forwards;
+}
+
+@keyframes fromUp {
+    from {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fromDown_animation {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: fromDown 0.2s linear forwards;
+}
+
+@keyframes fromDown {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.main_about * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_about .first {
+    width: 90%;
+    max-width: 90%;
+    padding-top: 3rem;
+}
+
+.main_about .first p {
+    justify-content: left;
+}
+
+.main_about .leftHalf {
+    width: 50%;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.main_about .greet {
+    font-size: 1.1rem;
+    color: rgb(40, 40, 40);
+}
+
+.main_about .label_aboutMe {
+    font-size: 2.8rem;
+    font-weight: 550;
+    color: rgb(40, 40, 40);
+    margin: .3rem 0;
+}
+
+.main_about .first purpleTag {
+    margin: 0 .4rem;
+}
+
+.main_about .role {
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: rgb(40, 40, 40);
+}
+
+.main_about .first .desc {
+    width: 85%;
+    font-size: 1rem;
+    margin: .7rem 0;
+}
+
+.main_about .buttons {
+    width: 70%;
+    justify-content: left;
+    column-gap: 1rem;
+    margin: 2% 0;
+}
+
+.main_about .resumeDownloadBTN {
+    width: fit-content;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    background-color: rgb(0, 140, 255);
+    color: aliceblue;
+    border-radius: .3rem;
+    transition: all 0.3s ease;
+}
+
+.main_about .resumeDownloadBTN:hover {
+    background-color: rgb(0, 87, 158);
+    cursor: pointer;
+}
+
+.main_about .resumeDownloadBTN:active {
+    transform: scale(0.9);
+}
+
+.main_about .contactNav {
+    width: fit-content;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(26, 26, 26);
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.69);
+}
+
+.main_about .contactNav:hover {
+    cursor: pointer;
+    background-color: rgb(212, 237, 255);
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.332), inset 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.332);
+}
+
+.main_about .contactNav:active {
+    transform: scale(0.9);
+}
+
+.main_about .middle {
+    width: 25%;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.273);
+    flex-direction: column;
+    align-items: start;
+    padding: 1% 0;
+    background-color: aliceblue;
+}
+
+.main_about .infoBox {
+    height: fit-content;
+    padding: .4rem 1rem;
+}
+
+.main_about .infoIcon {
+    width: 1.7rem;
+    height: 1.7rem;
+    color: rgb(115, 0, 197);
+}
+
+.main_about .info {
+    height: 100%;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0 0.7rem;
+}
+
+.main_about .info p {
+    width: 100%;
+}
+
+.main_about .infoHeader {
+    color: rgb(93, 93, 93);
+    font-size: 1.1rem;
+}
+
+.main_about .infoBody {
+    color: rgb(0, 107, 143);
+    font-size: .9rem;
+    font-weight: 550;
+}
+
+.main_about .rightHalf {
+    width: 25%;
+    justify-content: right;
+}
+
+.main_about .img {
+    width: 80%;
+    border-radius: 1rem;
+}
+
+
+
+.main_about .second {
+    width: 90%;
+    max-width: 90%;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 4rem;
+}
+
+.main_about .skillsBox {
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.34);
+    background-color: aliceblue;
+    flex-direction: column;
+    border-radius: .5rem;
+    overflow: hidden;
+    justify-content: left;
+}
+
+.main_about .skillHeaderBox {
+    width: 95%;
+    justify-content: space-between;
+    padding: 0.7rem 2.5%;
+    background-color: rgb(197, 223, 255);
+}
+
+.main_about .skillHeaderBox span {
+    column-gap: .4rem;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.main_about .skillHeaderBox .toSkill {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.main_about .skillHeaderBox .toSkill:hover {
+    transform: scale(1.1);
+    color: rgb(87, 145, 0);
+}
+
+.main_about .skillListing {
+    width: 95%;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: left;
+    column-gap: 1.5rem;
+    row-gap: 0.8rem;
+    padding: 2rem 0;
+}
+
+.main_about .skill {
+    width: fit-content;
+    padding: .2rem .7rem;
+    background-color: rgba(0, 104, 133, 0.386);
+    font-size: .9rem;
+    border-radius: .9rem;
+}
+
+
+.main_about .eduBox {
+    width: 20%;
+    justify-content: left;
+    overflow: hidden;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.34);
+    background-color: aliceblue;
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.main_about .eduHeaderBox {
+    width: 95%;
+    padding: 0.7rem 2.5%;
+    justify-content: left;
+    background-color: rgb(197, 223, 255);
+}
+
+.main_about .eduHeaderBox span {
+    column-gap: .4rem;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.main_about .eduListing {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    align-items: start;
+    flex-direction: column;
+}
+
+.main_about .edu {
+    width: 100%;
+    font-size: .9rem;
+}
+
+.main_about .edu .shapes {
+    width: 20%;
+    flex-direction: column;
+}
+
+.main_about .edu .circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: rgb(0, 128, 255);
+}
+
+.main_about .edu .line {
+    width: 0.2rem;
+    height: 4.4rem;
+    background-color: rgb(0, 128, 255);
+}
+
+.main_about .edu .eduInfos {
+    width: 80%;
+    height: 100%;
+    align-items: start;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: .1rem;
+}
+
+.main_about .edu .eduInfos .year {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+
+
+.main_about .interestsBox {
+    width: 30%;
+    background-color: aliceblue;
+    justify-content: left;
+    overflow: hidden;
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.34);
+    flex-direction: column;
+    border-radius: .5rem;
+}
+
+.main_about .interestsHeaderBox {
+    width: 95%;
+    padding: 0.7rem 2.5%;
+    justify-content: left;
+    background-color: rgb(197, 223, 255);
+}
+
+.main_about .interestsHeaderBox span {
+    column-gap: .4rem;
+    font-size: 1.4rem;
+    font-weight: 550;
+}
+
+.main_about .interestsListing {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    justify-content: left;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.main_about .interestsListing .interest {
+    width: 95%;
+    justify-content: left;
+}
+
+.main_about .interestsListing .interestInfo {
+    flex-direction: column;
+    padding: 0 1rem;
+    align-items: start;
+}
+
+.main_about .interestsListing .interestInfo .header {
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.main_about .interestsListing .interestInfo .body {
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:478px) {
+    .main_about .first {
+        padding-top: 5rem;
+        flex-direction: column;
+    }
+
+    .main_about .leftHalf {
+        width: 100%;
+    }
+
+    .main_about .role {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .main_about .first .desc {
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .main_about .buttons {
+        width: 100%;
+    }
+
+    .main_about .middle {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+
+    .main_about .infoBox {
+        margin: 0.2rem 0;
+    }
+
+    .main_about .infoHeader {
+        font-size: 0.95rem;
+    }
+
+    .main_about .infoBody {
+        font-size: .9rem;
+    }
+
+    .main_about .rightHalf {
+        display: none;
+    }
+
+    .main_about .second {
+        width: 90%;
+        flex-direction: column;
+        padding-top: 1rem 0;
+        margin-bottom: 0;
+    }
+
+    .main_about .skillsBox {
+        width: 100%;
+        height: 18rem;
+    }
+
+    .main_about .skillHeaderBox {
+        padding: 0.7rem;
+    }
+
+    .main_about .skillListing {
+        column-gap: 0.8rem;
+        row-gap: 0.5rem;
+    }
+
+    .main_about .skill {
+        border-radius: .9rem;
+    }
+
+
+    .main_about .eduBox {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .main_about .eduHeaderBox {
+        width: 95%;
+    }
+
+
+    .main_about .eduListing {
+        width: 100%;
+    }
+
+    .main_about .edu {
+        width: 100%;
+    }
+
+    .main_about .edu .shapes {
+        width: 15%;
+    }
+
+    .main_about .edu .eduInfos {
+        width: 85%;
+    }
+
+    .main_about .edu .eduInfos .year {
+        font-weight: 550;
+    }
+
+    .main_about .interestsBox {
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .main_about .interestsHeaderBox {
+        width: 95%;
+        padding: .7rem;
+    }
+
+    .main_about .interestsListing {
+        row-gap: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 479px) and (max-width:768px) {
+
+    .main_about .first {
+        width: 95%;
+        padding-top: 5rem;
+        justify-content: space-between;
+    }
+
+    .main_about .first p {
+        justify-content: left;
+    }
+
+    .main_about .leftHalf {
+        width: 65%;
+    }
+
+    .main_about .first .desc {
+        width: 95%;
+    }
+
+    .main_about .buttons {
+        width: 100%;
+    }
+
+    .main_about .resumeDownloadBTN {
+        font-size: 1rem;
+        padding: .4rem 1rem;
+    }
+
+ 
+    .main_about .contactNav {
+        font-size: 1rem;
+        padding: .4rem 1rem;
+    }
+
+  
+    .main_about .middle {
+        width: 35%;
+        padding: 1% 0;
+    }
+
+    .main_about .infoIcon {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .main_about .infoHeader {
+        font-size: 1.1rem;
+    }
+
+    .main_about .infoBody {
+        font-size: .9rem;
+    }
+
+    .main_about .rightHalf {
+        display: none;
+    }
+
+    .main_about .second {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .main_about .skillsBox {
+        width: 100%;
+        max-height: 20rem;
+        height: fit-content;
+    }
+
+    .main_about .skill {
+        padding: .3rem .9rem;
+    }
+
+
+    .main_about .eduBox {
+        width: 45%;
+    }
+
+    .main_about .interestsBox {
+        width: 50%;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1032px) {
+
+    .main_about .first {
+        width: 95%;
+        padding-top: 5rem;
+        justify-content: space-between;
+    }
+
+    .main_about .first p {
+        justify-content: left;
+    }
+
+    .main_about .leftHalf {
+        width: 65%;
+    }
+
+    .main_about .first .desc {
+        width: 95%;
+    }
+
+    .main_about .buttons {
+        width: 100%;
+    }
+
+    .main_about .resumeDownloadBTN {
+        font-size: 1rem;
+        padding: .4rem 1rem;
+    }
+
+ 
+    .main_about .contactNav {
+        font-size: 1rem;
+        padding: .4rem 1rem;
+    }
+
+  
+    .main_about .middle {
+        width: 35%;
+        padding: 1% 0;
+    }
+
+    .main_about .infoIcon {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .main_about .infoHeader {
+        font-size: 1.1rem;
+    }
+
+    .main_about .infoBody {
+        font-size: .9rem;
+    }
+
+    .main_about .rightHalf {
+        display: none;
+    }
+
+    .main_about .second {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        padding-top: 2rem;
+    }
+
+    .main_about .skillsBox {
+        width: 100%;
+        max-height: 20rem;
+        height: fit-content;
+    }
+
+    .main_about .skill {
+        padding: .3rem .9rem;
+    }
+
+
+    .main_about .eduBox {
+        width: 45%;
+    }
+
+    .main_about .interestsBox {
+        width: 50%;
+    }
+}

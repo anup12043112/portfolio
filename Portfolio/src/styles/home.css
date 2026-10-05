@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main_home * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main_home .greet {
+    width: 100%;
+    justify-content: left;
+    font-size: 1.5rem;
+}
+
+.main_home .landing {
+    width: 90%;
+    padding-top: 5rem;
+    height: fit-content;
+    transform: translateX(-2rem);
+    animation: landingPageInUpper 0.2s linear forwards;
+    opacity: 0;
+}
+
+@keyframes landingPageInUpper {
+    from {
+        opacity: 0;
+        transform: translateX(-2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main_home .left {
+    width: 50%;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.main_home .name {
+    width: 100%;
+    justify-content: left;
+    font-size: 2.8rem;
+    font-weight: 550;
+}
+
+purpleTag {
+    color: blueviolet;
+    margin-right: .6rem;
+}
+
+.main_home .role {
+    width: 100%;
+    justify-content: left;
+    font-size: 2.8rem;
+    font-weight: 550;
+}
+
+.main_home .desc {
+    width: 100%;
+    justify-content: left;
+    font-size: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+.main_home .skillHighlight {
+    width: 100%;
+    height: fit-content;
+    justify-content: left;
+    column-gap: .8rem;
+}
+
+.main_home .highlight {
+    width: 2.1rem;
+}
+
+.main_home .buttons {
+    width: 100%;
+    justify-content: left;
+    column-gap: 1rem;
+    margin: 2% 0;
+}
+
+.main_home .projectNav {
+    width: fit-content;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    background-color: rgb(113, 0, 193);
+    color: aliceblue;
+    border-radius: .3rem;
+    transition: all 0.3s ease;
+}
+
+.main_home .projectNav:hover {
+    background-color: rgb(58, 0, 99);
+    cursor: pointer;
+}
+
+.main_home .projectNav:active {
+    transform: scale(0.9);
+}
+
+.main_home .resumeDownloadBTN {
+    width: fit-content;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(26, 26, 26);
+    border-radius: .5rem;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.69);
+}
+
+.main_home .resumeDownloadBTN:hover {
+    cursor: pointer;
+    background-color: rgb(212, 237, 255);
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.332), inset 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.332);
+}
+
+.main_home .resumeDownloadBTN:active {
+    transform: scale(0.9);
+}
+
+.main_home .right {
+    width: 50%;
+    height: 100%;
+    justify-content: right;
+}
+
+.main_home .img {
+    width: 70%;
+    margin-top: 2%;
+}
+
+.main_home .about {
+    width: 90%;
+    padding: 0;
+    height: fit-content;
+    margin-top: 1.5rem;
+    transform: translateX(2rem);
+    animation: landingPageInUpperRight 0.2s linear forwards;
+    opacity: 0;
+}
+
+@keyframes landingPageInUpperRight {
+    from {
+        opacity: 0;
+        transform: translateX(2rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main_home .aboutImgBox {
+    width: 30%;
+    height: 100%;
+    justify-content: left;
+}
+
+.main_home .aboutImg {
+    width: 80%;
+    border-radius: .5rem;
+}
+
+.main_home .aboutTexts {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    row-gap: .5rem;
+}
+
+.main_home .aboutHeader {
+    font-size: 0.8rem;
+    text-decoration: underline blueviolet 2px;
+}
+
+.main_home .introHead {
+    width: 40%;
+    font-size: 1.6rem;
+    color: rgb(0, 110, 200);
+    font-weight: 550;
+}
+
+.main_home .intro {
+    width: 80%;
+    font-size: 1rem;
+}
+
+.main_home .infoContainer {
+    width: 100%;
+    column-gap: 2rem;
+    justify-content: left;
+    padding: 1rem 0;
+}
+
+.main_home .infoBox {
+    height: fit-content;
+    align-items: start;
+}
+
+.main_home .infoIcon {
+    width: 2rem;
+    height: 2rem;
+    color: rgb(157, 0, 255);
+}
+
+.main_home .info {
+    height: 100%;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0 0.7rem;
+}
+
+.main_home .info p {
+    width: 100%;
+    justify-content: left;
+}
+
+.main_home .infoHeader {
+    color: rgb(157, 0, 255);
+    font-size: 1.1rem;
+    font-weight: 550;
+}
+
+.main_home .infoBody {
+    color: rgb(43, 43, 43);
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:478px) {
+    .main_home .landing {
+        width: 95%;
+    }
+
+    .main_home .left {
+        width: 100%;
+        padding: 0;
+        padding-top: 5rem;
+        padding-bottom: 0;
+        align-items: start;
+    }
+
+    .main_home .greet {
+        font-size: 1.5rem;
+    }
+
+    .main_home .name {
+        width: 100%;
+        font-size: 2.8rem;
+    }
+
+    .main_home .role {
+        font-size: 2.8rem;
+        width: 100%;
+    }
+
+    .main_home .desc {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .main_home .skillHighlight {
+        width: 100%;
+        justify-content: left;
+        column-gap: .8rem;
+        padding: .9rem 0;
+        flex-wrap: wrap;
+    }
+
+    .main_home .highlight {
+        width: 2rem;
+    }
+
+    .main_home .buttons {
+        width: 100%;
+    }
+
+    .main_home .projectNav {
+        font-size: 1rem;
+        padding: .4rem 0.8rem;
+    }
+
+
+    .main_home .resumeDownloadBTN {
+        font-size: 1rem;
+        padding: .4rem 0.8rem;
+    }
+
+    .main_home .right {
+        display: none;
+    }
+
+    .main_home .about {
+        width: 100%;
+        margin: 0;
+        margin-top: 3rem;
+    }
+
+    .main_home .aboutImgBox {
+        display: none;
+    }
+
+    .main_home .aboutTexts {
+        width: 95%;
+    }
+
+    .main_home .aboutHeader {
+        font-size: 0.95rem;
+    }
+
+    .main_home .introHead {
+        width: 70%;
+        font-size: 1.6rem;
+    }
+
+    .main_home .intro {
+        width: 100%;
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .main_home .infoContainer {
+        width: 100%;
+        column-gap: 0;
+        flex-direction: column;
+    }
+
+    .main_home .infoBox {
+        width: 100%;
+        justify-content: left;
+        margin: 0.7rem 0;
+    }
+
+    .main_home .infoIcon {
+        width: 2rem;
+        height: 2rem;
+        color: rgb(157, 0, 255);
+    }
+
+
+    .main_home .infoHeader {
+        font-size: 1.1rem;
+    }
+
+    .main_home .infoBody {
+        font-size: .9rem;
+        margin: .3rem 0;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+    html {
+        font-size: 14.5px;
+    }
+
+    .main_home .greet {
+        font-size: 1.5rem;
+    }
+
+    .main_home .landing {
+        width: 95%;
+    }
+
+
+    .main_home .left {
+        width: 100%;
+        align-items: start;
+        padding: 10rem 0;
+        padding-bottom: 0;
+    }
+
+    .main_home .name {
+        width: 100%;
+    }
+
+    .main_home .role {
+        width: 100%;
+    }
+
+    .main_home .desc {
+        margin: .4rem 0;
+    }
+
+    .main_home .skillHighlight {
+        padding: 1rem 0;
+    }
+
+    .main_home .highlight {
+        width: 2.5rem;
+    }
+
+    .main_home .projectNav {
+        padding: .5rem 1.2rem;
+    }
+
+    .main_home .resumeDownloadBTN {
+        padding: .5rem 1.1rem;
+    }
+
+    .main_home .right {
+        display: none;
+    }
+
+
+    .main_home .about {
+        width: 95%;
+        margin: 2rem 0;
+    }
+
+    .main_home .aboutImgBox {
+        display: none;
+    }
+
+    .main_home .aboutTexts {
+        width: 100%;
+    }
+
+    .main_home .aboutHeader {
+        font-size: 1rem;
+    }
+
+    .main_home .introHead {
+        width: 45%;
+    }
+
+    .main_home .infoContainer {
+        padding: 2rem 0;
+    }
+
+    .main_home .infoBox {
+        align-items: center;
+    }
+
+
+    .main_home .info p {
+        justify-content: left;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1032px) {
+
+    .main_home .left {
+        width: 100%;
+    }
+    .main_home .right {
+        display: none;
+    }
+
+    .main_home .about {
+        width: 90%;
+        margin: 0;
+    }
+    .main_home .aboutImgBox {
+        display: none;
+    }
+
+    .main_home .aboutTexts {
+        width: 100%;
+    }
+
+
+    .main_home .introHead {
+        width: 50%;
+    }
+
+}

@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.contact_main * {
+    display: flex;
+}
+
+.contact_main {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.contact_main .contactInfoSec {
+    width: 55%;
+    height: fit-content;
+    flex-direction: column;
+}
+
+@scope (.contact_main .contactInfoSec) {
+    .getIn {
+        font-size: 1rem;
+        color: rgb(0, 126, 0);
+        margin-top: 2rem;
+    }
+
+    .headText {
+        font-size: 2.2rem;
+        display: inline;
+        font-weight: 550;
+    }
+
+    .headText span {
+        display: inline;
+        color: blueviolet;
+    }
+
+    .desc {
+        font-size: 1rem;
+        color: rgb(39, 39, 39);
+    }
+
+    .contact {
+        width: 50%;
+        margin: .6rem 0;
+    }
+
+    .contact_icon {
+        width: 10%;
+        align-items: center;
+    }
+
+    .icon {
+        background-color: rgb(196, 245, 255);
+        width: 1.2rem;
+        height: 1.2rem;
+        padding: .5rem;
+        border-radius: .4rem;
+        color: rgb(0, 119, 119);
+    }
+
+    .contact_info {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: .4rem;
+    }
+
+    .contactName {
+        font-size: .9rem;
+        font-weight: 550;
+    }
+
+    .contactValue {
+        font-size: 1rem;
+    }
+
+    .links {
+        width: fit-content;
+        column-gap: 1rem;
+        padding: 1.5rem 0;
+    }
+
+    .links a {
+        width: fit-content;
+        height: fit-content;
+        transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+        transform: scale(1.1);
+    }
+
+    .linkIcon {
+        width: 1.8rem;
+        height: 1.8rem;
+        color: black;
+    }
+
+}
+
+.contact_main .formSec {
+    width: 43%;
+    height: fit-content;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: rgb(239, 247, 255);
+    border-radius: .5rem;
+    box-shadow: 0 0 .1rem black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@scope(.contact_main .formSec) {
+    .header {
+        font-size: 1.4rem;
+        font-weight: 550;
+    }
+
+    .body {
+        font-size: 1rem;
+        margin: .5rem 0;
+    }
+
+    .inputSet {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .inputBox {
+        width: 50%;
+        flex-direction: column;
+        margin: .4rem 0;
+    }
+
+    .label {
+        font-size: 0.9rem;
+        font-weight: 550;
+    }
+
+    .input1 {
+        width: 80%;
+        margin: .4rem 0;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.338);
+        border-radius: .4rem;
+        padding: .9rem 1.3rem;
+    }
+
+    .inputBox2 {
+        width: 100%;
+        flex-direction: column;
+        margin: .4rem 0;
+    }
+
+    .input2 {
+        width: 100%;
+        padding: .5rem .5rem;
+        margin: .4rem 0;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.338);
+        border-radius: .4rem;
+    }
+
+    .sendIcon {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .sendBTN {
+        width: fit-content;
+        padding: .5rem 1.5rem;
+        margin: .6rem 0;
+        font-size: 1rem;
+        align-items: center;
+        column-gap: .4rem;
+        background-color: rgb(189, 239, 255);
+        color: rgb(0, 82, 109);
+        border-radius: .35rem;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .sendBTN:hover {
+        cursor: pointer;
+        background-color: rgb(135, 225, 255);
+    }
+
+    .sendBTN:active {
+        transform: scale(0.8);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 478px) {
+
+    .contact_main {
+        flex-direction: column;
+    }
+
+    .contact_main .contactInfoSec {
+        width: 100%;
+    }
+
+    @scope (.contact_main .contactInfoSec) {
+
+        .contact {
+            width: 100%;
+            margin: .9rem 0;
+        }
+
+        .contactName {
+            font-size: .95rem;
+        }
+
+        .contactValue {
+            font-size: 1rem;
+        }
+
+    }
+
+    .contact_main .formSec {
+        width: 90%;
+    }
+
+    @scope(.contact_main .formSec) {
+
+        .inputSet {
+            width: 100%;
+            height: fit-content;
+        }
+
+        .inputBox {
+            width: 50%;
+            flex-direction: column;
+            margin: .4rem 0;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            font-weight: 550;
+        }
+
+        .input1 {
+            padding: .8rem;
+        }
+
+        .inputBox2 {
+            width: 100%;
+            flex-direction: column;
+            margin: .4rem 0;
+        }
+
+        .input2 {
+            width: 100%;
+            padding: .5rem .5rem;
+            margin: .4rem 0;
+        }
+
+        .sendIcon {
+            width: 1.1rem;
+            height: 1.1rem;
+        }
+
+        .sendBTN {
+            padding: .5rem 1.5rem;
+            margin: .6rem 0;
+            font-size: 1rem;
+        }
+
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+
+    .contact_main {
+        width: 95%;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .contact_main .contactInfoSec {
+        width: 100%;
+    }
+
+    @scope (.contact_main .contactInfoSec) {
+        .getIn {
+            margin-top: 5rem;
+        }
+
+    }
+
+    .contact_main .formSec {
+        width: 60%;
+    }
+
+    @scope(.contact_main .formSec) {
+        .header {
+            font-size: 1.4rem;
+        }
+
+        .body {
+            font-size: 1rem;
+        }
+
+        .inputSet {
+            width: 100%;
+        }
+
+        .inputBox {
+            width: 50%;
+            margin: .4rem 0;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            font-weight: 550;
+        }
+
+        .input1 {
+            width: 75%;
+            padding: .7rem 1.3rem;
+        }
+
+        .input2 {
+            width: 98%;
+            padding: .5rem 1%;
+        }
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1032px) {
+
+    .contact_main {
+        width: 90%;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .contact_main .contactInfoSec {
+        width: 100%;
+    }
+
+    @scope (.contact_main .contactInfoSec) {
+        .getIn {
+            margin-top: 5rem;
+        }
+    }
+
+    .contact_main .formSec {
+        width: 60%;
+    }
+
+    @scope(.contact_main .formSec) {
+        .header {
+            font-size: 1.4rem;
+        }
+
+        .body {
+            font-size: 1rem;
+        }
+
+        .inputSet {
+            width: 100%;
+        }
+
+        .inputBox {
+            width: 50%;
+            margin: .4rem 0;
+        }
+
+        .label {
+            font-size: 0.9rem;
+            font-weight: 550;
+        }
+
+        .input1 {
+            width: 75%;
+            padding: .7rem 1.3rem;
+        }
+
+        .input2 {
+            width: 98%;
+            padding: .5rem 1%;
+        }
+    }
+
+}

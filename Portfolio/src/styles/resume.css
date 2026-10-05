@@ -1,0 +1,669 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.resume_main * {
+    display: flex;
+}
+
+.resume_main {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume_main .introSec {
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@scope (.resume_main .introSec) {
+    .intro {
+        width: 55%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .name {
+        font-size: 2.4rem;
+        font-weight: 550;
+    }
+
+    .role {
+        font-size: 2.4rem;
+        color: rgb(163, 88, 233);
+        font-weight: 550;
+    }
+
+    .infos_tech {
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        column-gap: .6rem;
+    }
+
+    .infos_tech p,
+    span {
+        display: inline;
+        font-size: .95rem;
+        margin: .3rem 0;
+    }
+
+    .infoIcon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .desc {
+        font-size: 1rem;
+        color: rgb(47, 47, 47);
+    }
+
+    .infos {
+        width: 100%;
+        justify-content: left;
+        align-items: center;
+        column-gap: .8rem;
+        padding: .5rem 0;
+    }
+
+    .infos span {
+        width: fit-content;
+        align-items: center;
+        padding: .3rem 1.2rem;
+        column-gap: .4rem;
+        box-shadow: 0 0 .1rem rgba(0, 0, 0, 0.762);
+        border-radius: 3rem;
+        font-size: .8rem;
+    }
+
+
+
+    .socialBox {
+        width: 30%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 2rem 0;
+        border-radius: .5rem;
+        border: 1px solid rgba(0, 0, 0, 0.364);
+        padding: .5rem 0;
+        background-color: rgba(245, 245, 220, 0.195);
+    }
+
+    .social {
+        width: 90%;
+        height: 3rem;
+        align-items: center;
+        margin: .3rem 0;
+    }
+
+    .iconBox {
+        width: 20%;
+        height: 65%;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 1.6rem;
+        color: rgb(0, 0, 148);
+    }
+
+    .icon2 {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .socialInfo {
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .socialInfo .name {
+        font-size: 1rem;
+        color: rgb(0, 0, 148);
+    }
+
+    .socialInfo .url {
+        font-size: 0.9rem;
+    }
+}
+
+
+.resume_main .summarySec {
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(0, 0, 0, 0.177);
+    padding: 2rem 0;
+    row-gap: 2rem;
+}
+
+@scope (.resume_main .summarySec) {
+    .summaryBox {
+        width: 59%;
+        height: auto;
+        flex-direction: column;
+        background-color: azure;
+        overflow: hidden;
+        align-items: center;
+        border-radius: .4rem;
+        box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.373);
+    }
+
+    .header {
+        width: 95%;
+        column-gap: .4rem;
+        font-size: 1.2rem;
+        padding: 1rem 2.5%;
+        font-weight: 550;
+        color: rgb(40, 40, 40);
+        background-color: rgb(213, 236, 255);
+        align-items: center;
+    }
+
+    .body {
+        width: 95%;
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .body .summary {
+        font-size: 1rem;
+        width: 95%;
+    }
+
+    .body span {
+        width: 100%;
+        column-gap: .8rem;
+        margin: 1.6rem 0;
+    }
+
+    .char {
+        width: fit-content;
+        font-size: .8rem;
+        background-color: rgba(63, 133, 255, 0.242);
+        color: rgb(0, 4, 255);
+        padding: .2rem .9rem;
+        border-radius: 2rem;
+    }
+
+    .quickFactsBox {
+        width: 39%;
+        min-height: 18rem;
+        height: auto;
+        flex-direction: column;
+        background-color: azure;
+        overflow: hidden;
+        align-items: center;
+        border-radius: .4rem;
+        box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.373);
+    }
+
+    .fact {
+        width: 100%;
+        margin: .4rem 0;
+    }
+
+    .factIconName {
+        width: 30%;
+        justify-content: left;
+        column-gap: 1rem;
+        align-items: center;
+        color: rgb(0, 0, 123);
+        font-size: 1rem;
+    }
+
+    .factValue {
+        width: 70%;
+        justify-content: left;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 550;
+    }
+
+
+    .eduExBox {
+        width: 39%;
+        height: 22rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .eduBox,
+    .expBox {
+        width: 100%;
+        height: 47%;
+        flex-direction: column;
+        align-items: center;
+        background-color: azure;
+        border-radius: .4rem;
+        box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.373);
+    }
+
+    .header_eduExp {
+        width: 90%;
+        height: 35%;
+        column-gap: 0.4rem;
+        font-size: 1.2rem;
+        font-weight: 550;
+        color: rgb(40, 40, 40);
+        align-items: center;
+    }
+
+    .body_eduExp {
+        width: 90%;
+        height: 65%;
+        align-items: center;
+    }
+
+    .symbolBox {
+        width: 10%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .symbolBox .circle {
+        width: 0.9rem;
+        height: 0.9rem;
+        background-color: rgb(0, 110, 255);
+        border-radius: 50%;
+    }
+
+    .symbolBox .line {
+        width: 0.2rem;
+        height: 3.5rem;
+        background-color: rgb(0, 110, 255);
+    }
+
+    .infoo {
+        width: 90%;
+        height: 70%;
+        flex-direction: column;
+        justify-content: left;
+        row-gap: .4rem;
+    }
+
+    .headEduExp {
+        font-size: 1.1rem;
+        font-weight: 550;
+    }
+
+    .bodyEduExp {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    .skillsBox {
+        width: 59%;
+        height: 22rem;
+        flex-direction: column;
+        background-color: azure;
+        overflow: hidden;
+        align-items: center;
+        border-radius: .4rem;
+        box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.373);
+    }
+
+    .header_skill {
+        width: 95%;
+        column-gap: 0.4rem;
+        padding: 1rem 2.5%;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 550;
+        color: rgb(40, 40, 40);
+        background-color: rgb(213, 236, 255);
+    }
+
+    .body_skill {
+        width: 95%;
+        padding: 2rem 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 1.5rem;
+    }
+
+    .skillset {
+        width: 49%;
+        height: 45%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .skillType {
+        font-size: .9rem;
+        font-weight: 550;
+    }
+
+    .skillList {
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+
+    .skill {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+        font-size: .9rem;
+        row-gap: .4rem;
+    }
+
+    .skillImg {
+        width: 1.7rem;
+        height: 1.7rem;
+        border-radius: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 478px) {
+    html {
+        font-size: 13px;
+    }
+
+    .resume_main .introSec {
+        flex-direction: column;
+    }
+
+    @scope (.resume_main .introSec) {
+        .intro {
+            margin-top: 5rem;
+            width: 100%;
+        }
+
+        .infos {
+            align-items: start;
+            flex-direction: column;
+        }
+
+        .infos span {
+            padding: .5rem 1.2rem;
+            font-size: .9rem;
+        }
+
+        .socialBox {
+            width: 100%;
+        }
+
+    }
+
+
+    .resume_main .summarySec {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    @scope (.resume_main .summarySec) {
+        .summaryBox {
+            width: 100%;
+            height: 28rem;
+        }
+
+        .char {
+            font-size: 0.85rem;
+            padding: .5rem .9rem;
+        }
+
+        .quickFactsBox {
+            width: 100%;
+        }
+
+        .fact {
+            width: 100%;
+            margin: .4rem 0;
+        }
+
+        .factIconName {
+            width: 35%;
+        }
+
+        .factValue {
+            width: 65%;
+        }
+
+
+        .eduExBox {
+            width: 100%;
+        }
+
+        .skillsBox {
+            width: 100%;
+            height: 35rem;
+        }
+
+        .body_skill {
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .skillType {
+            font-size: 1rem;
+        }
+
+        .skill {
+            row-gap: .4rem;
+        }
+
+        .skillImg {
+            width: 2.1rem;
+            height: 2.1rem;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+    .resume_main .introSec {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+
+    @scope (.resume_main .introSec) {
+        .intro {
+            width: 100%;
+        }
+
+        .socialBox {
+            width: 100%;
+        }
+
+        .social {
+            width: 95%;
+        }
+
+        .iconBox {
+            width: 15%;
+        }
+
+        .socialInfo {
+            width: 85%;
+        }
+    }
+
+
+    .resume_main .summarySec {
+        width: 100%;
+    }
+
+    @scope (.resume_main .summarySec) {
+        .summaryBox {
+            width: 100%;
+        }
+
+        .quickFactsBox {
+            width: 100%;
+        }
+
+        .eduExBox {
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        .eduBox,
+        .expBox {
+            width: 50%;
+            height: auto;
+        }
+
+        .body_eduExp {
+            width: 90%;
+        }
+
+        .symbolBox .line {
+            height: 75%;
+        }
+
+        .infoo {
+            height: auto;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .skillsBox {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1032px) {
+    .resume_main {
+        width: 95%;
+    }
+
+
+    @scope (.resume_main .introSec) {
+        .intro {
+            width: 55%;
+        }
+
+        .name {
+            font-size: 2.4rem;
+        }
+
+        .role {
+            font-size: 2.4rem;
+        }
+
+        .infos_tech {
+            width: 100%;
+        }
+
+        .infos_tech p,
+        span {
+            font-size: .95rem;
+        }
+
+        .infoIcon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .desc {
+            font-size: 1rem;
+        }
+
+        .infos {
+            flex-direction: column;
+            align-items: start;
+            row-gap: .2rem;
+        }
+
+        .socialBox {
+            width: 40%;
+        }
+    }
+
+    .resume_main .summarySec {
+        align-items: stretch;
+    }
+
+    @scope (.resume_main .summarySec) {
+        .summaryBox {
+            width: 100%;
+        }
+
+        .quickFactsBox {
+            width: 55%;
+        }
+
+        .eduExBox {
+            width: 43%;
+        }
+
+        .eduBox,
+        .expBox {
+            width: 100%;
+            height: 48%;
+        }
+
+        .header_eduExp {
+            width: 90%;
+            height: 30%;
+        }
+
+        .body_eduExp {
+            height: 70%;
+        }
+
+        .skillsBox {
+            width: 100%;
+        }
+
+        .skillset {
+            width: 50%;
+        }
+
+        .skillType {
+            font-size: 1rem;
+        }
+
+        .skillList {
+            column-gap: 1.8rem;
+        }
+
+        .skillImg {
+            width: 2.1rem;
+            height: 2.1rem;
+        }
+    }
+}

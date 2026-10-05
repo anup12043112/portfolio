@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 5rem;
+    background-color: rgb(244, 246, 248);
+    color: rgb(0, 100, 109);
+    padding: 0 2.5%;
+}
+
+.logo {
+    width: fit-content;
+    height: 100%;
+}
+
+.logoImg {
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.nav .header {
+    font-size: 1.7rem;
+    font-weight: 550;
+    margin: 0 0.6rem;
+    color: rgb(49, 49, 49);
+}
+
+pinkHeader {
+    color: rgb(169, 118, 250);
+    margin: .2rem;
+}
+
+.nav_desktop {
+    width: fit-content;
+    height: 100%;
+}
+
+.navBTN {
+    width: fit-content;
+    height: fit-content;
+    column-gap: .4rem;
+    justify-content: left;
+    border-radius: 2rem;
+    padding: .3rem .9rem;
+    text-decoration: none;
+    margin: .2rem .3rem;
+    font-size: 1.1rem;
+    font-weight: 550;
+    transition: all 0.3s ease;
+    color: rgb(52, 52, 52);
+}
+
+.navBTN:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navBTN:active {
+    transform: scale(0.9);
+}
+
+.navIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.nav .current {
+    color: rgb(0, 143, 64);
+    background-color: rgb(255, 255, 255);
+    box-shadow: .1rem .1rem .1rem rgb(93, 147, 194), inset .1rem .1rem .1rem rgb(43, 43, 43);
+    animation: changePageIn 0.3s ease forwards;
+}
+
+@keyframes changePageIn {
+    0% {
+        transform: translateY(0);
+    }
+
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.nav_mobile {
+    display: none;
+    overflow-x: auto;
+    justify-content: left;
+    width: 95%;
+    animation: navIn 0.3s ease forwards;
+    opacity: 0;
+}
+
+@keyframes navIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.nav_mobile::-webkit-scrollbar {
+    display: none;
+
+}
+
+.navToggleBTN {
+    display: none;
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 1.8rem;
+    border: none;
+    color: rgb(43, 43, 43);
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:478px) {
+    .navToggleBTN {
+        display: flex;
+    }
+
+    .nav {
+        width: 95%;
+        height: 5%;
+        padding: 2% 2.5%;
+    }
+
+    .nav_desktop {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: flex;
+        position: absolute;
+        padding: 1.5% 0;
+        top: 5%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: .1rem .1rem .1rem rgb(51, 51, 51), inset .1rem .1rem .1rem rgb(71, 160, 255);
+        justify-content: space-evenly;
+        border-radius: 3rem;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+
+    .navBTN {
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+        font-size: 0.8rem;
+        margin: 0;
+        flex-direction: column;
+        background-color: #ffffff00;
+        color: rgb(61, 61, 61);
+    }
+
+    .logoImg {
+        height: 2.5rem;
+        border-radius: 50%;
+    }
+
+
+    .navIcon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .nav .current {
+        color: rgb(0, 160, 185);
+        text-shadow: 0 0 1px rgb(0, 149, 165);
+        background-color: rgba(205, 233, 255, 0);
+        box-shadow: none;
+        animation: changePageIn 0.3s ease forwards;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:479px) and (max-width:768px) {
+    .navToggleBTN {
+        display: flex;
+    }
+
+    .nav {
+        width: 95%;
+        height: 5%;
+        padding: 2% 2.5%;
+    }
+
+    .nav_desktop {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: flex;
+        position: absolute;
+        padding: 1.5% 0;
+        top: 5%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: .1rem .1rem .1rem rgb(51, 51, 51), inset .1rem .1rem .1rem rgb(71, 160, 255);
+        justify-content: space-evenly;
+        border-radius: 3rem;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+
+    .navBTN {
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+        margin: 0;
+        flex-direction: column;
+        background-color: #ffffff00;
+        color: rgb(61, 61, 61);
+    }
+
+    .logoImg {
+        height: 2.5rem;
+        border-radius: 50%;
+    }
+
+
+    .navIcon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .nav .current {
+        color: rgb(0, 160, 185);
+        text-shadow: 0 0 1px rgb(0, 149, 165);
+        background-color: rgba(205, 233, 255, 0);
+        box-shadow: none;
+        animation: changePageIn 0.3s ease forwards;
+    }
+
+}
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width:970px) {
+    .navToggleBTN {
+        display: flex;
+    }
+
+    .nav {
+        width: 95%;
+        height: 5%;
+        padding: 2% 2.5%;
+    }
+
+    .nav_desktop {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: flex;
+        position: absolute;
+        padding: 1.5% 0;
+        top: 5%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: .1rem .1rem .1rem rgb(51, 51, 51), inset .1rem .1rem .1rem rgb(71, 160, 255);
+        justify-content: space-evenly;
+        border-radius: 3rem;
+        transition: all 0.3s ease;
+        z-index: 100;
+    }
+
+    .navBTN {
+        border-radius: 0.3rem;
+        padding: 0.3rem;
+        margin: 0;
+        flex-direction: column;
+        background-color: #ffffff00;
+        color: rgb(61, 61, 61);
+    }
+
+    .logoImg {
+        height: 2.5rem;
+        border-radius: 50%;
+    }
+
+
+    .navIcon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .nav .current {
+        color: rgb(0, 160, 185);
+        text-shadow: 0 0 1px rgb(0, 149, 165);
+        background-color: rgba(205, 233, 255, 0);
+        box-shadow: none;
+        animation: changePageIn 0.3s ease forwards;
+    }
+
+}
+
+
+
